@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block title %}Diabetes {% endblock %}
+{% block body %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+        <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>About</h6>
+                            <h2>Learning is the key to success</h2>
+                        </div>
+                        <p> I have created this website as a part of my data science learning. I have used ensemble techniques and K-Nearest Neighbours algorithm for this classification problem.
+                            All the model files are present in my <a href="https://github.com/premkumar25">github.</a>
+                            <br>I am open for any discussion related to Data science and keen to learn new things.
+                            <br><br>Please contact for more information.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="right-content">
+                        <div class="thumb">
+                            <img src="../static/images/about1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area Ends ***** -->
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">
+
+                    <div class="right-text-content">
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/premkumar25"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://twitter.com/iam_premkumar"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/prem-kumar-776379a2/"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/iam_premkumar/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block title %}Health{% endblock %}
+{% block body %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    <!-- ***** Main Banner Area Start ***** -->
+    <div id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-content">
+                        <div class="inner-content">
+                            <h4>Health Diagnosis</h4>
+                            <div class="main-white-button scroll-to-section">
+                                    <a href="#menu">Diagnose</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="main-banner header-text">
+                        <div class="Modern-Slider">
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                                <img src="../static/images/health_home.jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** Menu Area Starts ***** -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h6>Diagnose</h6>
+                        <h2>Welcome to health diagnosis!</h2>
+                        <h2>Select any of the below health care to diagnose..</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item-carousel">
+            <div class="col-lg-12">
+                <div class="owl-menu-item owl-carousel">
+                    <div class="item">
+                        <div class='card heart'>
+                            <div class='info'>
+                              <h1 class='title'>Heart </h1>
+                              <p class='description'>The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone.
+                            The heart pumps blood through the network of arteries and veins called the cardiovascular system.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="/heart">Click here to Diagnose<i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card liver'>
+                            <div class='info'>
+                              <h1 class='title'>Liver </h1>
+                              <p class='description'>The liver is an organ about the size of a football. It sits just under your rib cage on the right side of your abdomen.
+                            The liver is essential for digesting food and ridding your body of toxic substances. Liver disease can be inherited (genetic)</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="/liver">Click here to Diagnose<i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card kidney'>
+                            <div class='info'>
+                              <h1 class='title'>Kidney </h1>
+                              <p class='description'>The kidneys are a pair of bean-shaped organs on either side of your spine, below your ribs and behind your belly.
+                            Each kidney is about 4 or 5 inches long, roughly the size of a large fist. The kidneys' job is to filter your blood.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="/kidney">Click here to Diagnose<i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card cancer'>
+                            <div class='info'>
+                              <h1 class='title'>Breast Cancer </h1>
+                              <p class='description'>A cancer that forms in the cells of the breasts.<br>
+                            Breast cancer can occur in women and rarely in men. Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.
+                            Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="/cancer">Click here to Diagnose<i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card diabetes'>
+                            <div class='info'>
+                              <h1 class='title'>Diabetes </h1>
+                              <p class='description'>Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar.
+                            The hormone insulin moves sugar from the blood into your cells to be stored or used for energy.
+                            With diabetes, your body either doesn't make enough insulin or can't effectively use the insulin it does make.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="/diabetes">Click here to Diagnose<i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                    <div class="right-text-content">
+                            <ul class="social-icons">
+                                <li><a href="https://github.com/premkumar25"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://twitter.com/iam_premkumar"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/prem-kumar-776379a2/"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/iam_premkumar/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}

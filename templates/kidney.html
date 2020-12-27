@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block title %}Kidney {% endblock %}
+{% block body %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<section class="section" id="reservation">
+		<section class="section" id="kidney">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>Kidney Diagnosis</h6>
+                            <h2>Check the health of your heart in one click!!</h2>
+                        </div>
+                        <p>The kidneys are a pair of bean-shaped organs on either side of your spine, below your ribs and behind your belly.
+                            Each kidney is about 4 or 5 inches long, roughly the size of a large fist. The kidneys' job is to filter your blood.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contact" action="{{ url_for ('predict') }}" method="post">
+                          <div class="row">
+                            <div class="col-lg-12">
+                                <h4>Kidney Disease prediction</h4>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <select value="specific gravity" name="specific gravity">
+                                      <option value="1.005">Specific Gravity</option>
+                                      <option value="1.005">1.005</option>
+                                      <option value="1.010">1.010</option>
+                                      <option value="1.015">1.015</option>
+                                      <option value="1.020">1.020</option>
+                                      <option value="1.025">1.025</option>
+                                  </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                  <select value="albumin" name="Albumin">
+                                      <option value="0">Albumin</option>
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                  </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                  <select value="rbc" name="rbc">
+                                    <option value="0">Red blood cells</option>
+                                    <option value="1">Abnormal</option>
+                                    <option value="0">Normal</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input type="number" step="0.01" name="hemoglobin" placeholder="Hemoglobin" required="required"/>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <input type="number" step="0.01" name="packed_cell_volume" placeholder="Packed Cell Volume" required="required"/>
+                              </fieldset>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input type="number" step="0.01" name="red_blood_cell_count" placeholder="Red Blood Cell Count" required="required"/>
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <select value="rbc" name="rbc">
+                                    <option value="0">Hypertension</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <select value="diabetes mellitus" name="diabetes mellitus">
+                                    <option value="0">Diabetes mellitus</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button-icon">Diagnose</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</section>
+    </section>
+
+{% endblock %}
