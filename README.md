@@ -40,4 +40,16 @@
 <li> Numpy </li>
 <li> Scikit learn </li>
 <li> Pickle </li>
-  
+
+### IDE used
+
+<li>PyCharm </li>
+<li> Jupyter Notebook/ Google Colab </li>
+
+### How to run
+
+<ol>Import this file in you desktop.</ol>
+<ol>Create a virtual environmnet inside this directory</ol>
+<ol>Install necessary files</ol>
+<ol>In command prompt give 'flask run'</ol>
+<ol>Copy the local host and open in browser</ol>
